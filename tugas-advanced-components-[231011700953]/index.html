@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Rekayasa Web - Paket Page </title>
+</head>
+  <body class="bg-light">
+    <h1> Special Package </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/tugasweb">NATURA XPLORE!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tugas-form-sederhana-[231011700953]/">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/[tugas-registrasi-validasi-[231011700953]/">Registrasi</a></li>
+                <li><a class="dropdown-item" href="/tugas-advanced-components-[231011700953]/">Paket Wisata</a></li>
+                <li><a class="dropdown-item" href="/tugas-dropdown-textarea-[231011700953]/">Feedback</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/tugas-checkbox-radio-[231011700953]/">Socmed</a></li>
+          <form class="d-flex">
+          </ul>
+            </li>
+          </ul>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <h2 class="text-center">Form Pemesanan Paket Wisata Natura Xplore</h2>
+        <form>
+            <!-- Nama Lengkap -->
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Masukkan nama lengkap" required>
+            </div>
+    
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email" required>
+            </div>
+    
+            <!-- Jenis Tiket (Dropdown) -->
+            <div class="mb-3">
+                <label for="ticketType" class="form-label">Jenis Tiket</label>
+                <select class="form-select" id="ticketType" required>
+                    <option selected disabled>Pilih jenis tiket</option>
+                    <option value="economy">Pemula</option>
+                    <option value="business">Petualang</option>
+                    <option value="firstClass">Legenda</option>
+                </select>
+            </div>
+    
+            <!-- Jumlah Tiket -->
+            <div class="mb-3">
+                <label for="ticketQty" class="form-label">Jumlah Tiket</label>
+                <input type="number" class="form-control" id="ticketQty" min="1" max="10" placeholder="Masukkan jumlah tiket" required>
+            </div>
+    
+            <!-- Tanggal Keberangkatan -->
+            <div class="mb-3">
+                <label for="departureDate" class="form-label">Tanggal Keberangkatan</label>
+                <input type="date" class="form-control" id="departureDate" required>
+            </div>
+    
+            <!-- Metode Pembayaran (Radio Buttons) -->
+            <div class="mb-3">
+                <label class="form-label">Metode Pembayaran</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" required>
+                    <label class="form-check-label" for="creditCard">Kartu Kredit</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+                    <label class="form-check-label" for="paypal">Debit</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" value="bankTransfer">
+                    <label class="form-check-label" for="bankTransfer">Transfer Bank</label>
+                </div>
+            </div>
+    
+            <!-- Tombol Submit -->
+            <button type="submit" class="btn btn-primary">Pesan Tiket</button>
+        </form>
+    </div>
+  
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
